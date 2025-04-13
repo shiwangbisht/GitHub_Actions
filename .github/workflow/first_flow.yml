@@ -1,0 +1,24 @@
+name: My First Flow
+
+on: push
+
+jobs:
+  
+  First-Flow:
+    
+    name: First-Flow
+    
+    runs-on: ubuntu-ubuntu-latest
+    
+    steps:
+    - name: First-First-action
+      run: echo "This is my first worklow using GitHub action"
+    
+    - name: Clone the repo
+      run: git clone https://github.com/shiwangbisht/GitHub_Actions.git
+
+    - name: List the files
+      run: ls
+
+    - name: Read the files
+      run: cat README.README.md
