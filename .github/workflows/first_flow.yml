@@ -8,10 +8,9 @@ jobs:
     
     name: First-Flow
     
-    runs-on: ubuntu-ubuntu-latest
-    
+    runs-on: ubuntu-latest
     steps:
-    - name: First-First-action
+    - name: First-action
       run: echo "This is my first worklow using GitHub action"
     
     - name: Clone the repo
@@ -21,4 +20,4 @@ jobs:
       run: ls
 
     - name: Read the files
-      run: cat README.README.md
+      run: cat README.md
