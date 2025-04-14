@@ -18,9 +18,9 @@ jobs:
         run: sudo apt-get install cowsay -y           #------ download cowsay library
 
       - name: Run cowsay cmd
-        run: cowsay -f gragon "Run for corner, I am Dragon..........RAWR" >> dragon.txt
+        run: cowsay -f dragon "Run for corner, I am Dragon..........RAWR" >> dragon.txt
 
       - name: List & Read the file
         run: |
           ls -lrta
-          cat README.md
+          cat dragon.txt
