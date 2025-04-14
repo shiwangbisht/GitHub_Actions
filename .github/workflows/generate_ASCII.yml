@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Message
-        run: "This work flow is to generate ASCII"
+        run: echo "This work flow is to generate ASCII"
 
       - name: Checkout
         uses: actions/checkout@v4
