@@ -1,0 +1,27 @@
+name: My First Flow
+
+on: push
+
+jobs:
+  
+  Generate-ASCII:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Message
+        run: "This work flow is to generate ASCII"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download Cowsay
+        run: sudo apt install cowsay -y           #------ download cowsay library
+
+      - name: Run cowsay cmd
+        run: cowsay -f gragon "Run for corner, I am Dragon..........RAWR" >> dragon.txt
+
+      - name: List & Read the file
+        run: |
+          ls -lrta
+          cat README.md
