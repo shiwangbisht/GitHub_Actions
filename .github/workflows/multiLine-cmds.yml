@@ -1,0 +1,21 @@
+name: Multi Line CMDS
+
+on: push
+
+jobs:
+
+  Multi-Line-CMDs:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Check Out
+      uses: actions/checkout@v4                 #------------------using checkout action
+
+    - name: Multi Line Cmds
+      run: |                         #------------------using | -> pipeline symbol to write a multi-line cmd
+        echo "this is to show how we can use multi-line cmds"
+        ls -lrta
+        cat README.md
+
