@@ -1,0 +1,23 @@
+name: First Flow WithActions
+
+on: push
+
+jobs:
+
+    First-Flow-WithActions:
+
+      runs-on: ubuntu-latest
+
+      steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: message
+        run: echo "This ismy first flow using action"
+    
+      - name: list out
+        run: ls -lrth 
+    
+      - name: File content
+        run: cat README.md
