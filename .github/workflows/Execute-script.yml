@@ -1,0 +1,16 @@
+name: EXECUTE SCRIPT
+
+on: push
+
+jobs:
+  
+  Script-execution:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: execute-script
+        run: ./dragon.sh
