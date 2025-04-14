@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download Cowsay
-        run: sudo apt install cowsay -y           #------ download cowsay library
+        run: sudo apt-get install cowsay -y           #------ download cowsay library
 
       - name: Run cowsay cmd
         run: cowsay -f gragon "Run for corner, I am Dragon..........RAWR" >> dragon.txt
